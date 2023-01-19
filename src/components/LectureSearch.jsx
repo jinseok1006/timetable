@@ -7,7 +7,7 @@ import { useLectureActionHandler } from '@/components/LectureContext';
 
 async function fetchLectures(params) {
   const response = await axios.get(
-    `http://${import.meta.env.VITE_FETCH_URL}/lectures${params}.json`
+    `https://${import.meta.env.VITE_FETCH_URL}/lectures${params}.json`
   );
   return response.data;
 }
