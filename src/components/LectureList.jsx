@@ -1,16 +1,19 @@
-import axios from 'axios';
+import {
+  List,
+  ListItem,
+  ListItemButton,
+  Checkbox,
+  FormGroup,
+  Radio,
+  RadioGroup,
+  FormControl,
+} from '@mui/material';
+import { useLectureState } from './LectureContext';
 
-import useAsync from '../hooks/useAsync';
+// 내가 선택한 lecture의 정보를 timetable도 알아야한다.. => 상태 끌어올리기
 
-async function fetchLectures() {
-  const response = await axios.get('http://192.168.0.13:3000/lectures.json');
-  return response.data;
-}
-
-export default function LectureList() {
-  const [state, fetchData] = useAsync(fetchLectures, [], false);
-
-  const { loading, error, data: lectures } = state;
+export default function LectureList({ selectedIndex, onSelect }) {
+  const { loading, error, data: lectures } = useLectureState();
 
   if (loading) {
     return <div>로딩중...</div>;
@@ -21,10 +24,30 @@ export default function LectureList() {
   if (!lectures) return null;
 
   return (
-    <ul>
+    <List dense>
       {lectures.map((lecture, i) => (
-        <li key={i}>{lecture.subjectName}</li>
+        <LectureItem
+          key={i}
+          id={i}
+          lecture={lecture}
+          onSelect={onSelect}
+          selectedIndex={selectedIndex}
+        />
       ))}
-    </ul>
+    </List>
+  );
+}
+
+function LectureItem({ id, onSelect, lecture, selectedIndex }) {
+  return (
+    <ListItem>
+      <Checkbox size="small" />
+      <ListItemButton
+        selected={id === selectedIndex}
+        onClick={() => onSelect(id)}
+      >
+        {lecture.title}
+      </ListItemButton>
+    </ListItem>
   );
 }

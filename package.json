@@ -17,6 +17,7 @@
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.1",
     "axios": "^1.2.2",
+    "immer": "^9.0.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -26,5 +27,6 @@
     "@vitejs/plugin-react": "^3.0.0",
     "gh-pages": "^4.0.0",
     "vite": "^4.0.0"
-  }
+  },
+  "homepage": "http://jinseok1006.github.io/tabletest"
 }

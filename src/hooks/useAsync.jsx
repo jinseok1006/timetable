@@ -1,4 +1,4 @@
-import React, { useReducer, useContext, useEffect } from 'react';
+import React, { useReducer, useEffect } from 'react';
 
 function reducer(state, action) {
   switch (action.type) {
@@ -25,7 +25,7 @@ function reducer(state, action) {
   }
 }
 
-function useAsync(callback, deps, skip = false) {
+export default function useAsync(callback, deps, skip = false) {
   const [state, dispatch] = useReducer(reducer, {
     loading: false,
     data: null,
@@ -49,20 +49,4 @@ function useAsync(callback, deps, skip = false) {
   }, deps);
 
   return [state, fetchData];
-}
-
-export default useAsync;
-
-export function AsyncComponent({ children, state }) {
-  const { loading, error, data } = state;
-
-  if (loading) {
-    return <div>로딩중...</div>;
-  }
-  if (error) {
-    return <div>에러발생!</div>;
-  }
-  if (!data) return null;
-
-  return { children };
 }
