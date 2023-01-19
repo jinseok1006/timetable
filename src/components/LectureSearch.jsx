@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-import { Box, Input, TextField, Button } from '@mui/material';
+import { Box, TextField, Button } from '@mui/material';
 
 import { useLectureActionHandler } from '@/components/LectureContext';
 
 async function fetchLectures(params) {
   const response = await axios.get(
-    `http://localhost:3000/lectures${params}.json`
+    `http://${import.meta.env.VITE_FETCH_URL}/lectures${params}.json`
   );
   return response.data;
 }
