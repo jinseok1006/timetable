@@ -17,15 +17,40 @@ export const WEEKS = {
   sat: 6,
 };
 
+export function toJbnuPeriod(period) {
+  const jbnuPeriod = Math.floor(period / 2) + 1;
+  const type = period % 2 == 0 ? 'A' : 'B';
+  return `${jbnuPeriod}-${type}`;
+}
+
 export function decodeSchedule(schedulesString) {
-  return schedulesString.split(',').map((scheduleString) => {
+  const schedules = {};
+
+  schedulesString.split(',').forEach((scheduleString) => {
     const [w, t] = scheduleString.split(' ');
     const [time, type] = t.split('-');
-
     const week = weekKRtoInt(w);
     const period = (parseInt(time) - 1) * 2 + (type === 'A' ? 0 : 1);
-    return { week, period };
+
+    if (!schedules[week]) {
+      schedules[week] = [];
+    }
+
+    schedules[week].push(period);
   });
+
+  // 기존 값을 변동시키지 않고 새로운 객체를 생성해서 할당 (tsx 타입에러 피하기->제네릭써야함)
+  // 차라리 start와 러닝타임을 가지고있는게 좋을듯.
+  return Object.keys(schedules).reduce(
+    (pre, week) => ({
+      ...pre,
+      [week]: {
+        start: Math.min(...schedules[week]),
+        end: Math.max(...schedules[week]),
+      },
+    }),
+    {}
+  );
 }
 
 function weekKRtoInt(week) {

@@ -26,7 +26,7 @@ export default function LectureReference() {
       <Grid container>
         <Grid
           item
-          xs={4}
+          xs={2}
           sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
         >
           <LectureSearch reset={reset} />
@@ -36,7 +36,7 @@ export default function LectureReference() {
         </Grid>
         <Grid
           item
-          xs={4}
+          xs={6}
           sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
         >
           <TimeTable selectedIndex={selectedIndex} />

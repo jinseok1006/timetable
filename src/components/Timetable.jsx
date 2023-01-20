@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Container } from '@mui/material';
-import { WEEKS, decodeSchedule } from './util';
+import React, { createContext, useEffect, useState } from 'react';
+import { Box, Container, Typography } from '@mui/material';
+import { WEEKS, decodeSchedule, toJbnuPeriod } from './util';
 
 import { useLectureState } from '@/components/LectureContext';
 
@@ -8,8 +8,13 @@ const ROWS = Array.from({ length: 25 }, () => 0); // 교시
 const COLS = Array.from({ length: 7 }, () => 0); // 요일
 
 const initTable = ROWS.map(() =>
-  COLS.map((col, i) => ({ preview: false, checked: false }))
+  COLS.map((col, i) => ({
+    preview: { create: true, blank: true, time: null },
+    checked: false,
+  }))
 );
+
+const LectureTitleContext = createContext(null);
 
 export default function TimeTable({ selectedIndex }) {
   // 테이블 상태
@@ -20,14 +25,16 @@ export default function TimeTable({ selectedIndex }) {
 
   const [display, setDisplay] = useState({ preview: null, selected: [] });
 
-  // console.log(table[0][WEEKS.sun]); // 0: 일요일의 1-A 수업은?
-
-  // TODO: #1
+  // TODO: #1 (V)
   // schedules가 null이면 그냥 현재 테이블상태를 그대로 유지하고 렌더
   // schedule이 null이 아니면 테이블상태에 반영하고 렌더
 
-  // TODO: #2
+  // TODO: #2 (V)
   // state에서 선택된값을 따로 보관한다.. lectrues가 바뀌면 테이블을 렌더링할수 없음
+
+  // TODO: #3 (V)
+  // rowspan 유도하기
+  // schedules을 {1: {tart:1, end: 3}, ...}식으로 바꿈..
 
   useEffect(() => {
     if (selectedIndex !== null) {
@@ -36,6 +43,7 @@ export default function TimeTable({ selectedIndex }) {
         preview: { ...lectures[selectedIndex] },
       }));
     }
+    console.log(display);
   }, [selectedIndex]);
 
   useEffect(() => {
@@ -44,43 +52,45 @@ export default function TimeTable({ selectedIndex }) {
 
       setTable(
         table.map((row, periodIndex) =>
-          row.map((col, weekIndex) => ({
-            ...table[periodIndex][weekIndex],
-            preview: schedules.some(
-              ({ week, period }) => weekIndex === week && periodIndex === period
-            )
-              ? 1
-              : 0,
-          }))
+          row.map((col, weekIndex) => {
+            const preview = {
+              blank: true,
+              time: null,
+              create: true,
+              title: null,
+            };
+
+            if (schedules[weekIndex]) {
+              const { start, end } = schedules[weekIndex];
+              preview.blank = false;
+              if (start === periodIndex) {
+                preview.time = end - start + 1;
+                preview.title = display.preview.title;
+              } else if (periodIndex > start && periodIndex <= end) {
+                preview.create = false;
+              } else {
+                preview.blank = true;
+              }
+            }
+
+            return { ...table[periodIndex][weekIndex], preview };
+          })
         )
       );
     }
-
-    console.log(display);
   }, [display]);
-
-  // useEffect(() => {
-  //   if (lecture) {
-  //     const schedules = decodeSchedule(lecture.schedule);
-
-  //     setTable(
-  //       table.map((row, periodIndex) =>
-  //         row.map((col, weekIndex) => ({
-  //           ...table[periodIndex][weekIndex],
-  //           preview: schedules.some(
-  //             ({ week, period }) => weekIndex === week && periodIndex === period
-  //           )
-  //             ? 1
-  //             : 0,
-  //         }))
-  //       )
-  //     );
-  //   }
-  // }, [lecture]);
 
   return (
     <Container>
-      <Box component="table" sx={{ border: 1, borderCollapse: 'collapse' }}>
+      <Box
+        component="table"
+        sx={{
+          border: 1,
+          borderCollapse: 'collapse',
+          width: '100%',
+          tableLayout: 'fixed', // TODO #4
+        }}
+      >
         <thead>
           <tr>
             <Box component="th" sx={{ border: 1 }}></Box>
@@ -95,18 +105,15 @@ export default function TimeTable({ selectedIndex }) {
           {table.map((period, i) => (
             <tr key={i}>
               <Box component="th" sx={{ border: 1 }}>
-                {i}
+                {toJbnuPeriod(i)}
               </Box>
-              {period.map((week, j) => {
-                const { preview, checked } = week;
-                return (
-                  <SelectedCell
-                    key={j}
-                    preview={preview}
-                    checked={checked}
-                  ></SelectedCell>
-                );
-              })}
+              {period.map((week, j) => (
+                <TableCell
+                  key={j}
+                  preview={week.preview}
+                  checked={week.checked}
+                />
+              ))}
             </tr>
           ))}
         </tbody>
@@ -115,14 +122,63 @@ export default function TimeTable({ selectedIndex }) {
   );
 }
 
-function SelectedCell({ children, preview, checked }) {
+function TableCell({ preview, checked }) {
+  const { create, blank, time, title } = preview;
+  if (create) {
+    if (blank) {
+      return <Cell />;
+    } else {
+      return <SelectedCell time={time}>{title}</SelectedCell>;
+    }
+  } else {
+    return null;
+  }
+}
+
+// function SelectedCell({ children, time }) {
+//   return (
+//     <Box
+//       component="td"
+//       sx={{
+//         border: '1px solid black',
+//         backgroundColor: '#ffa8a8',
+//       }}
+//       rowSpan={time}
+//     >
+//       <Typography variant="body2"> {children}</Typography>
+//     </Box>
+//   );
+// }
+function SelectedCell({ children, time }) {
+  return (
+    <Cell
+      sx={{
+        backgroundColor: '#ffa8a8',
+      }}
+      rowSpan={time}
+    >
+      <Typography variant="body2" textAlign="center">
+        {' '}
+        {children}
+      </Typography>
+    </Cell>
+  );
+}
+
+function Cell({ children, ...props }) {
   return (
     <Box
       component="td"
       sx={{
         border: '1px solid black',
-        backgroundColor: preview ? '#ffa8a8' : null,
+        width: '12.5%',
+        height: '25px',
+        overflow: 'hidden',
+        whiteSpace: 'nowrap',
+        textOverflow: 'ellipsis', // TODO #4
+        textAlign: 'center',
       }}
+      {...props}
     >
       {children}
     </Box>
