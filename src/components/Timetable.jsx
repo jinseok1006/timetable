@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Typography } from '@mui/material';
-import { WEEKS, toJbnuPeriod } from './util';
+import { toJbnuPeriod, weekIntToKR } from './util';
 import { useCartState } from './LectureContext';
 
 import { cartColors } from './util.js';
@@ -25,7 +25,7 @@ const initTable = ROWS.map(() =>
   COLS.map((col, i) => createCellDisplayState())
 );
 
-export default function TimeTable() {
+export default React.memo(function TimeTable() {
   const [table, setTable] = useState(initTable);
   const cart = useCartState();
 
@@ -78,8 +78,8 @@ export default function TimeTable() {
         <tr>
           <Box component="th" sx={{ border: 1 }}></Box>
           {COLS.map((_, i) => (
-            <Box component="th" sx={{ border: 1 }} key={WEEKS[i]}>
-              {WEEKS[i]}
+            <Box component="th" sx={{ border: 1 }} key={i}>
+              {weekIntToKR(i)}
             </Box>
           ))}
         </tr>
@@ -98,7 +98,7 @@ export default function TimeTable() {
       </tbody>
     </Box>
   );
-}
+});
 
 function TableCell({ state }) {
   const { create, blank, display } = state;

@@ -1,12 +1,11 @@
+import React from 'react';
 import {
   List,
   ListItem,
   ListItemButton,
   ListItemText,
   Typography,
-  Box,
 } from '@mui/material';
-import { useEffect } from 'react';
 import {
   useCartDispatch,
   useCartState,
@@ -15,7 +14,7 @@ import {
 
 const maxCart = 7;
 
-export default function LectureList() {
+export default function LectureList({ titleInput }) {
   const cart = useCartState();
   const cartDispatch = useCartDispatch();
   const { loading, error, data: lectures } = useLectureState();
@@ -36,23 +35,28 @@ export default function LectureList() {
 
     // 시간이 겹치는 경우 false
     // 포함하는경우? 겹치는경우..
-    if (
-      cart.some((sLecture) =>
-        Object.keys(sLecture.schedules).some((weekIndex) => {
-          if (schedules.hasOwnProperty(weekIndex)) {
-            const { start: sStart, end: sEnd } = sLecture.schedules[weekIndex];
-            const { start, end } = schedules[weekIndex];
-            // console.log(sStart, sEnd, start, end);
-            return (
-              (sStart >= start && sStart <= end) ||
-              (start >= sStart && start <= sEnd)
-            );
+    let overlapTitle = null;
+    const overlap = cart.some((sLecture) =>
+      Object.keys(sLecture.schedules).some((weekIndex) => {
+        if (schedules.hasOwnProperty(weekIndex)) {
+          const { start: sStart, end: sEnd } = sLecture.schedules[weekIndex];
+          const { start, end } = schedules[weekIndex];
+          // console.log(sStart, sEnd, start, end);
+
+          const test =
+            (sStart >= start && sStart <= end) ||
+            (start >= sStart && start <= sEnd);
+          if (test) {
+            overlapTitle = sLecture.title;
           }
-          return false;
-        })
-      )
-    ) {
-      alert('시간표가 겹쳐요');
+          return test;
+        }
+        return false;
+      })
+    );
+
+    if (overlap) {
+      alert(`${overlapTitle} 과목과 시간표가 겹쳐요`);
       return;
     }
 
@@ -67,19 +71,48 @@ export default function LectureList() {
   }
   if (!lectures) return null;
 
-  return (
-    <List dense>
-      {Object.keys(lectures).map((id) => (
-        <LectureItem key={id} lecture={lectures[id]} onAdd={onAdd} />
-      ))}
-    </List>
-  );
+  if (lectures) {
+    const matches =
+      titleInput === ''
+        ? lectures
+        : lectures.filter((lecture) => lecture.title.includes(titleInput));
+
+    if (matches.length === 0) {
+      return (
+        <Typography textAlign="center" sx={{ mt: 3 }}>
+          검색어를 다시 입력해주세요
+        </Typography>
+      );
+    }
+
+    return (
+      <List dense>
+        {/* {Object.keys(lectures).map((id) => (
+              <LectureItem
+                key={id}
+                lecture={lectures[id]}
+                onAdd={onAdd}
+                cart={cart}
+              />
+            ))} */}
+        {matches.map((lecture) => (
+          <LectureItem
+            key={lecture.id}
+            lecture={lecture}
+            onAdd={onAdd}
+            cart={cart}
+          />
+        ))}
+      </List>
+    );
+  }
 }
 
-function LectureItem({ lecture, onAdd }) {
+function LectureItem({ lecture, onAdd, cart }) {
+  const overlap = cart.some((sLecture) => sLecture.code === lecture.code); // 오류 발생여지 다분함..
   return (
-    <ListItem disableGutters>
-      <ListItemButton onClick={() => onAdd(lecture)}>
+    <ListItem>
+      <ListItemButton onClick={() => onAdd(lecture)} disabled={overlap}>
         <ListItemText
           primary={
             <>

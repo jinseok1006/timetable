@@ -9,9 +9,10 @@ import LectureSearch from '@/components/LectureSearch';
 import LectureCart from '../components/LectureCart';
 
 export default function LectureReference() {
-  const [selectedIndex, setSelectedIndex] = useState(null);
-  const onSelect = (id) => setSelectedIndex(id);
-  const reset = () => setSelectedIndex(null);
+  const [titleInput, setTitleInput] = useState('');
+  const onTitleChange = (e) => {
+    setTitleInput(e.target.value);
+  };
 
   // TODO: #1(no=2369991) -> (CLEAR??????)
   // 그리고 삼항 연산자로 동적 null 때려서 하는 것보단
@@ -25,17 +26,17 @@ export default function LectureReference() {
       <Grid container>
         <Grid
           item
-          xs={2}
+          xs={3}
           sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
         >
-          <LectureSearch reset={reset} />
+          <LectureSearch titleInput={titleInput} onChange={onTitleChange} />
         </Grid>
         <Grid item xs={3}>
-          <LectureList selectedIndex={selectedIndex} onSelect={onSelect} />
+          <LectureList titleInput={titleInput} />
         </Grid>
         <Grid
           item
-          xs={3}
+          xs={2}
           sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
         >
           <LectureCart />
@@ -45,7 +46,7 @@ export default function LectureReference() {
           xs={4}
           sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
         >
-          <TimeTable selectedIndex={selectedIndex} />
+          <TimeTable />
         </Grid>
       </Grid>
     </LectureProvider>

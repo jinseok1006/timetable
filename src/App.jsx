@@ -23,7 +23,7 @@ export default function App() {
           body: { fontFamily: 'noto sans kr' },
         }}
       />
-      <Container maxWidth="xl" sx={{ mt: 2 }}>
+      <Container maxWidth="xl" sx={{ mt: 2 }} fixed disableGutters>
         <LectureReference />
       </Container>
     </ThemeProvider>

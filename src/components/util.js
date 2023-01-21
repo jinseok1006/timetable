@@ -1,5 +1,3 @@
-// scheduleString='월 1-A, 월 1-B ...'
-
 export const cartColors = [
   '#ffa8a8',
   '#74c0fc',
@@ -11,23 +9,6 @@ export const cartColors = [
   '#748ffc',
 ];
 
-export const WEEKS = {
-  0: 'sun',
-  1: 'mon',
-  2: 'tue',
-  3: 'wen',
-  4: 'thr',
-  5: 'fri',
-  6: 'sat',
-  sun: 0,
-  mon: 1,
-  tue: 2,
-  wen: 3,
-  thr: 4,
-  fri: 5,
-  sat: 6,
-};
-
 // 내부적으로는 1-A 2-B 와 같이 처리하는방식은 피함.
 // 무조건 정수로 연산, 외부로 출력할때는 다시 포매팅해서
 export function toJbnuPeriod(period) {
@@ -36,36 +17,7 @@ export function toJbnuPeriod(period) {
   return `${jbnuPeriod}-${type}`;
 }
 
-export function decodeSchedule(schedulesString) {
-  const schedules = {};
-
-  schedulesString.split(',').forEach((scheduleString) => {
-    const [w, t] = scheduleString.split(' ');
-    const [time, type] = t.split('-');
-    const week = weekKRtoInt(w);
-    const period = (parseInt(time) - 1) * 2 + (type === 'A' ? 0 : 1);
-
-    if (!schedules[week]) {
-      schedules[week] = [];
-    }
-
-    schedules[week].push(period);
-  });
-
-  // 기존 값을 변동시키지 않고 새로운 객체를 생성해서 할당 (tsx 타입에러 피하기->제네릭써야함)
-  return Object.keys(schedules).reduce(
-    (pre, week) => ({
-      ...pre,
-      [week]: {
-        start: Math.min(...schedules[week]),
-        end: Math.max(...schedules[week]),
-      },
-    }),
-    {}
-  );
-}
-
-function weekKRtoInt(week) {
+export function weekKRtoInt(week) {
   switch (week) {
     case '일':
       return 0;
@@ -83,5 +35,26 @@ function weekKRtoInt(week) {
       return 6;
     default:
       throw new Error(`올바르지 않은 요일 ${week}`);
+  }
+}
+
+export function weekIntToKR(int) {
+  switch (int) {
+    case 0:
+      return '일';
+    case 1:
+      return '월';
+    case 2:
+      return '화';
+    case 3:
+      return '수';
+    case 4:
+      return '목';
+    case 5:
+      return '금';
+    case 6:
+      return '토';
+    default:
+      throw new Error(`올바르지 않은 정수 ${int}`);
   }
 }

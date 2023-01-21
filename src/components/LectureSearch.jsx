@@ -12,18 +12,12 @@ async function fetchLectures(params) {
   return response.data;
 }
 
-export default function LectureSearch({ reset }) {
-  const [input, setInput] = useState('');
+export default function LectureSearch({ titleInput, onChange }) {
   const actionHandler = useLectureActionHandler();
-
-  const onChange = (e) => {
-    setInput(e.target.value);
-  };
 
   const handleSearch = async (e) => {
     const { name } = e.target;
     actionHandler(fetchLectures, name);
-    reset();
   };
 
   return (
@@ -31,14 +25,12 @@ export default function LectureSearch({ reset }) {
       <TextField
         label="과목명"
         size="small"
-        value={input}
+        value={titleInput}
         onChange={onChange}
         fullWidth
         sx={{ mb: 1 }}
       />
-      <Button fullWidth variant="contained" disabled>
-        검색
-      </Button>
+
       <Button
         fullWidth
         variant="contained"

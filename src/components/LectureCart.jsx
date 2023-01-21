@@ -1,16 +1,16 @@
+import React from 'react';
 import {
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Box,
   Typography,
 } from '@mui/material';
 import { useCartDispatch, useCartState } from './LectureContext';
 
 import { cartColors } from './util.js';
 
-export default function LectureCart() {
+export default React.memo(function LectureCart() {
   const cart = useCartState();
   const cartDispatch = useCartDispatch();
 
@@ -25,7 +25,7 @@ export default function LectureCart() {
       ))}
     </List>
   );
-}
+});
 
 function CartItem({ lecture, id, onDelete }) {
   return (
