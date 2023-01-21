@@ -1,11 +1,19 @@
-import { Container, Grid } from '@mui/material';
+import { createTheme, Container, Grid, ThemeProvider } from '@mui/material';
 
 import LectureReference from './pages/LectureReference';
 
+const theme = createTheme({
+  typography: {
+    fontFamily: 'noto sans kr',
+  },
+});
+
 export default function App() {
   return (
-    <Container maxWidth="lg" sx={{ mt: 2 }}>
-      <LectureReference />
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container maxWidth="lg" sx={{ mt: 2 }}>
+        <LectureReference />
+      </Container>
+    </ThemeProvider>
   );
 }

@@ -7,6 +7,7 @@ import {
   Radio,
   RadioGroup,
   FormControl,
+  ListItemText,
 } from '@mui/material';
 import { useLectureState } from './LectureContext';
 
@@ -46,7 +47,7 @@ function LectureItem({ id, onSelect, lecture, selectedIndex }) {
         selected={id === selectedIndex}
         onClick={() => onSelect(id)}
       >
-        {lecture.title}
+        <ListItemText primary={lecture.title} />
       </ListItemButton>
     </ListItem>
   );

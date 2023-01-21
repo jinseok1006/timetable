@@ -4,7 +4,7 @@ import { WEEKS, decodeSchedule, toJbnuPeriod } from './util';
 
 import { useLectureState } from '@/components/LectureContext';
 
-const ROWS = Array.from({ length: 25 }, () => 0); // 교시
+const ROWS = Array.from({ length: 26 }, () => 0); // 교시
 const COLS = Array.from({ length: 7 }, () => 0); // 요일
 
 const initTable = ROWS.map(() =>
@@ -13,8 +13,6 @@ const initTable = ROWS.map(() =>
     checked: false,
   }))
 );
-
-const LectureTitleContext = createContext(null);
 
 export default function TimeTable({ selectedIndex }) {
   // 테이블 상태
@@ -36,6 +34,8 @@ export default function TimeTable({ selectedIndex }) {
   // rowspan 유도하기
   // schedules을 {1: {tart:1, end: 3}, ...}식으로 바꿈..
 
+  // TODO: #5
+  // 테이블 상태하고 테이블 렌더링을 분리해야할것같음
   useEffect(() => {
     if (selectedIndex !== null) {
       setDisplay((display) => ({
@@ -43,7 +43,6 @@ export default function TimeTable({ selectedIndex }) {
         preview: { ...lectures[selectedIndex] },
       }));
     }
-    console.log(display);
   }, [selectedIndex]);
 
   useEffect(() => {
@@ -135,20 +134,6 @@ function TableCell({ preview, checked }) {
   }
 }
 
-// function SelectedCell({ children, time }) {
-//   return (
-//     <Box
-//       component="td"
-//       sx={{
-//         border: '1px solid black',
-//         backgroundColor: '#ffa8a8',
-//       }}
-//       rowSpan={time}
-//     >
-//       <Typography variant="body2"> {children}</Typography>
-//     </Box>
-//   );
-// }
 function SelectedCell({ children, time }) {
   return (
     <Cell
@@ -157,8 +142,18 @@ function SelectedCell({ children, time }) {
       }}
       rowSpan={time}
     >
-      <Typography variant="body2" textAlign="center">
-        {' '}
+      <Typography
+        variant="body2"
+        textAlign="center"
+        sx={{
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden',
+          // whiteSpace: 'nowrap',
+          // textOverflow: 'ellipsis', // TODO #4
+          textAlign: 'center',
+        }}
+      >
         {children}
       </Typography>
     </Cell>
@@ -173,10 +168,6 @@ function Cell({ children, ...props }) {
         border: '1px solid black',
         width: '12.5%',
         height: '25px',
-        overflow: 'hidden',
-        whiteSpace: 'nowrap',
-        textOverflow: 'ellipsis', // TODO #4
-        textAlign: 'center',
       }}
       {...props}
     >

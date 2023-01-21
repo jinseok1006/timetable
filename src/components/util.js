@@ -4,7 +4,7 @@ export const WEEKS = {
   0: 'sun',
   1: 'mon',
   2: 'tue',
-  3: 'wne',
+  3: 'wen',
   4: 'thr',
   5: 'fri',
   6: 'sat',
@@ -40,7 +40,6 @@ export function decodeSchedule(schedulesString) {
   });
 
   // 기존 값을 변동시키지 않고 새로운 객체를 생성해서 할당 (tsx 타입에러 피하기->제네릭써야함)
-  // 차라리 start와 러닝타임을 가지고있는게 좋을듯.
   return Object.keys(schedules).reduce(
     (pre, week) => ({
       ...pre,
