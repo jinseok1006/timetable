@@ -46,7 +46,7 @@ export default function LectureSearch({ reset }) {
         name="1"
         onClick={handleSearch}
       >
-        request lecture1.json
+        request lectures1.json
       </Button>
       <Button
         fullWidth
@@ -55,7 +55,7 @@ export default function LectureSearch({ reset }) {
         name="2"
         onClick={handleSearch}
       >
-        request lecture2.json
+        request lectures2.json
       </Button>
     </Box>
   );

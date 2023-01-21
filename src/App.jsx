@@ -1,4 +1,10 @@
-import { createTheme, Container, Grid, ThemeProvider } from '@mui/material';
+import {
+  createTheme,
+  Container,
+  ThemeProvider,
+  GlobalStyles,
+  CssBaseline,
+} from '@mui/material';
 
 import LectureReference from './pages/LectureReference';
 
@@ -11,7 +17,13 @@ const theme = createTheme({
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="lg" sx={{ mt: 2 }}>
+      <CssBaseline />
+      <GlobalStyles
+        styles={{
+          body: { fontFamily: 'noto sans kr' },
+        }}
+      />
+      <Container maxWidth="xl" sx={{ mt: 2 }}>
         <LectureReference />
       </Container>
     </ThemeProvider>

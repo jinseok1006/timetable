@@ -39,11 +39,26 @@ function reducer(state, action) {
   }
 }
 
+function cartReducer(cart, action) {
+  switch (action.type) {
+    case 'ADD':
+      return [...cart, action.lecture];
+    case 'DELETE':
+      return cart.filter((lecture, id) => id !== action.id);
+    default:
+      throw new Error(`unhandled action type ${action.type}`);
+  }
+}
+
+const CartStateContext = createContext(null);
+const CartDispatchContext = createContext(null);
+
 const LectureStateContext = createContext(null);
 const LectureActionHandlerContext = createContext(null);
 
 export default function LectureProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [cart, cartDispath] = useReducer(cartReducer, []);
 
   async function actionHandler(callback, ...rest) {
     dispatch({ type: 'LOADING' });
@@ -59,7 +74,11 @@ export default function LectureProvider({ children }) {
   return (
     <LectureStateContext.Provider value={state}>
       <LectureActionHandlerContext.Provider value={actionHandler}>
-        {children}
+        <CartDispatchContext.Provider value={cartDispath}>
+          <CartStateContext.Provider value={cart}>
+            {children}
+          </CartStateContext.Provider>
+        </CartDispatchContext.Provider>
       </LectureActionHandlerContext.Provider>
     </LectureStateContext.Provider>
   );
@@ -81,4 +100,20 @@ export function useLectureActionHandler() {
     throw new Error('Cannot find LectureProvider');
   }
   return actionHandler;
+}
+
+export function useCartDispatch() {
+  const cartDispatch = useContext(CartDispatchContext);
+  if (!cartDispatch) {
+    throw new Error('cannot find LectureProvider');
+  }
+  return cartDispatch;
+}
+
+export function useCartState() {
+  const cart = useContext(CartStateContext);
+  if (!cart) {
+    throw new Error('cannot find LectureProvider');
+  }
+  return cart;
 }

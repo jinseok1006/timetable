@@ -6,8 +6,7 @@ import LectureList from '@/components/LectureList';
 
 import { Grid } from '@mui/material';
 import LectureSearch from '@/components/LectureSearch';
-
-// 전역으로 필요한 상태: preview<-selected
+import LectureCart from '../components/LectureCart';
 
 export default function LectureReference() {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -31,12 +30,19 @@ export default function LectureReference() {
         >
           <LectureSearch reset={reset} />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={3}>
           <LectureList selectedIndex={selectedIndex} onSelect={onSelect} />
         </Grid>
         <Grid
           item
-          xs={6}
+          xs={3}
+          sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
+        >
+          <LectureCart />
+        </Grid>
+        <Grid
+          item
+          xs={4}
           sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
         >
           <TimeTable selectedIndex={selectedIndex} />

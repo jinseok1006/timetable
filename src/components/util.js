@@ -1,5 +1,16 @@
 // scheduleString='월 1-A, 월 1-B ...'
 
+export const cartColors = [
+  '#ffa8a8',
+  '#74c0fc',
+  '#ffe066',
+  '#b197fc',
+  '#66d9e8',
+  '#a9e34b',
+  '#63e6be',
+  '#748ffc',
+];
+
 export const WEEKS = {
   0: 'sun',
   1: 'mon',
@@ -17,6 +28,8 @@ export const WEEKS = {
   sat: 6,
 };
 
+// 내부적으로는 1-A 2-B 와 같이 처리하는방식은 피함.
+// 무조건 정수로 연산, 외부로 출력할때는 다시 포매팅해서
 export function toJbnuPeriod(period) {
   const jbnuPeriod = Math.floor(period / 2) + 1;
   const type = period % 2 == 0 ? 'A' : 'B';
