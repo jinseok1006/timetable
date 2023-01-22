@@ -15,8 +15,7 @@ async function fetchLectures(params) {
 export default React.memo(function LectureRequest() {
   const actionHandler = useLectureActionHandler();
 
-  const handleSearch = async (e) => {
-    const { name } = e.target;
+  const handleSearch = async (name) => {
     actionHandler(fetchLectures, name);
   };
 
@@ -53,19 +52,24 @@ export default React.memo(function LectureRequest() {
       <Button
         fullWidth
         variant="contained"
-        name="lectures1.json"
-        onClick={handleSearch}
+        onClick={() => handleSearch('itinfo.json')}
       >
-        request lectures1.json
+        request itinfo.json
       </Button>
 
       <Button
         fullWidth
         variant="contained"
-        name="liberal.json"
-        onClick={handleSearch}
+        onClick={() => handleSearch('core.liberal.json')}
       >
-        request liberal.json
+        request core.liberal.json
+      </Button>
+      <Button
+        fullWidth
+        variant="contained"
+        onClick={() => handleSearch('elem.liberal.json')}
+      >
+        request elem.liberal.json
       </Button>
     </Grid>
   );
