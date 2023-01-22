@@ -20,10 +20,17 @@ export default function App() {
       <CssBaseline />
       <GlobalStyles
         styles={{
-          body: { fontFamily: 'noto sans kr' },
+          html: { height: '100%' },
+          body: { fontFamily: 'noto sans kr', height: '100%' },
+          '#root': { height: '100%' },
         }}
       />
-      <Container maxWidth="xl" sx={{ mt: 2 }} fixed disableGutters>
+      <Container
+        maxWidth="xl"
+        sx={{ mt: 0, height: 'inherit', pt: 3 }}
+        fixed
+        disableGutters
+      >
         <LectureReference />
       </Container>
     </ThemeProvider>

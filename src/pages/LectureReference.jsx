@@ -4,14 +4,18 @@ import LectureProvider, { useLectureState } from '@/components/LectureContext';
 import TimeTable from '@/components/Timetable';
 import LectureList from '@/components/LectureList';
 
-import { Grid } from '@mui/material';
-import LectureSearch from '@/components/LectureSearch';
+import { Grid, Stack, Box } from '@mui/material';
+import LectureRequest from '@/components/LectureRequest';
 import LectureCart from '../components/LectureCart';
+import LectureSearch from '../components/LectureSearch';
 
 export default function LectureReference() {
   const [titleInput, setTitleInput] = useState('');
   const onTitleChange = (e) => {
     setTitleInput(e.target.value);
+  };
+  const onTitleReset = () => {
+    setTitleInput();
   };
 
   // TODO: #1(no=2369991) -> (CLEAR??????)
@@ -23,29 +27,30 @@ export default function LectureReference() {
 
   return (
     <LectureProvider>
-      <Grid container>
+      <Grid container sx={{ height: 'inherit' }}>
+        <Grid item xs={2}>
+          <LectureRequest />
+        </Grid>
         <Grid
           item
           xs={3}
-          sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
+          sx={{
+            height: 'inherit',
+            display: 'flex',
+            flexFlow: 'column nowrap',
+          }}
         >
-          <LectureSearch titleInput={titleInput} onChange={onTitleChange} />
+          <Box>
+            <LectureSearch titleInput={titleInput} onChange={onTitleChange} />
+          </Box>
+          <Box sx={{ flex: '1', overflowX: 'auto' }}>
+            <LectureList titleInput={titleInput} />
+          </Box>
         </Grid>
         <Grid item xs={3}>
-          <LectureList titleInput={titleInput} />
-        </Grid>
-        <Grid
-          item
-          xs={2}
-          sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
-        >
           <LectureCart />
         </Grid>
-        <Grid
-          item
-          xs={4}
-          sx={{ position: 'sticky', alignSelf: 'flex-start', top: '2rem' }}
-        >
+        <Grid item xs={4}>
           <TimeTable />
         </Grid>
       </Grid>

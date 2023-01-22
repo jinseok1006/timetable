@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import {
   List,
   ListItem,
@@ -19,7 +19,7 @@ export default function LectureList({ titleInput }) {
   const cartDispatch = useCartDispatch();
   const { loading, error, data: lectures } = useLectureState();
 
-  const onAdd = (lecture) => {
+  const onAdd = useCallback((lecture) => {
     const { id, schedules } = lecture;
     // maxCart
     if (cart.length > maxCart) {
@@ -61,7 +61,7 @@ export default function LectureList({ titleInput }) {
     }
 
     cartDispatch({ type: 'ADD', lecture });
-  };
+  });
 
   if (loading) {
     return <div>로딩중..</div>;
@@ -108,7 +108,7 @@ export default function LectureList({ titleInput }) {
   }
 }
 
-function LectureItem({ lecture, onAdd, cart }) {
+const LectureItem = React.memo(function LectureItem({ lecture, onAdd, cart }) {
   const overlap = cart.some((sLecture) => sLecture.code === lecture.code); // 오류 발생여지 다분함..
   return (
     <ListItem>
@@ -150,4 +150,4 @@ function LectureItem({ lecture, onAdd, cart }) {
       </ListItemButton>
     </ListItem>
   );
-}
+});
