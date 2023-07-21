@@ -52,9 +52,9 @@ export default React.memo(function LectureRequest() {
       <Button
         fullWidth
         variant="contained"
-        onClick={() => handleSearch('itinfo.json')}
+        onClick={() => handleSearch('comp.json')}
       >
-        request itinfo.json
+        request comp_major.json
       </Button>
 
       <Button
