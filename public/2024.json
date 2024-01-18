@@ -1,0 +1,1610 @@
+[
+  {
+      "completion": "전공선택",
+      "title": "객체지향프로그래밍",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "4",
+      "professor": "강동기",
+      "method": "일반",
+      "schedulesString": "수 4-A,수 4-B,수 5-A,수 5-B,금 3-A,금 3-B,금 4-A,금 4-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "75분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000117725",
+      "id": "000011772501",
+      "schedules": {
+          "3": {
+              "start": 6,
+              "end": 9
+          },
+          "5": {
+              "start": 4,
+              "end": 7
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "객체지향프로그래밍",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "4",
+      "professor": "이성현",
+      "method": "일반",
+      "schedulesString": "수 9-A,수 9-B,수 10-A,수 10-B,금 8-A,금 8-B,금 9-A,금 9-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "75분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000117725",
+      "id": "000011772502",
+      "schedules": {
+          "3": {
+              "start": 16,
+              "end": 19
+          },
+          "5": {
+              "start": 14,
+              "end": 17
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "객체지향프로그래밍",
+      "division": "3",
+      "credit": "3",
+      "timePerWeek": "4",
+      "professor": "권오봉",
+      "method": "일반",
+      "schedulesString": "화 3-A,화 3-B,화 4-A,화 4-B,목 1-A,목 1-B,목 2-A,목 2-B",
+      "room": "전주:공과대학 7호관 330",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "39",
+      "currentPersonnel": "0",
+      "limitPersonnel": "39",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000117725",
+      "id": "000011772503",
+      "schedules": {
+          "2": {
+              "start": 4,
+              "end": 7
+          },
+          "4": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "객체지향프로그래밍",
+      "division": "4",
+      "credit": "3",
+      "timePerWeek": "4",
+      "professor": "강동기",
+      "method": "일반",
+      "schedulesString": "수 9-A,수 9-B,수 10-A,수 10-B,금 8-A,금 8-B,금 9-A,금 9-B",
+      "room": "전주:공과대학 7호관 330",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "39",
+      "currentPersonnel": "0",
+      "limitPersonnel": "39",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000117725",
+      "id": "000011772504",
+      "schedules": {
+          "3": {
+              "start": 16,
+              "end": 19
+          },
+          "5": {
+              "start": 14,
+              "end": 17
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "게임및혼합현실",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "편기현",
+      "method": "일반",
+      "schedulesString": "월 8-A,월 8-B,월 9-A,월 9-B,수 8-A,수 8-B",
+      "room": "전주:공과대학 7호관 330",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "39",
+      "currentPersonnel": "0",
+      "limitPersonnel": "39",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128041",
+      "id": "000012804101",
+      "schedules": {
+          "1": {
+              "start": 14,
+              "end": 17
+          },
+          "3": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "네트워크보안",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "홍득조",
+      "method": "일반",
+      "schedulesString": "화 1-A,화 1-B,화 2-A,화 2-B,목 3-A,목 3-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128199",
+      "id": "000012819901",
+      "schedules": {
+          "2": {
+              "start": 0,
+              "end": 3
+          },
+          "4": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "논리설계",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김민철",
+      "method": "일반",
+      "schedulesString": "월 8-A,월 8-B,월 9-A,월 9-B,수 8-A,수 8-B",
+      "room": "전주:공과대학 7호관 302",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000121394",
+      "id": "000012139401",
+      "schedules": {
+          "1": {
+              "start": 14,
+              "end": 17
+          },
+          "3": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "논리설계",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김찬기",
+      "method": "일반",
+      "schedulesString": "수 4-A,수 4-B,금 3-A,금 3-B,금 4-A,금 4-B",
+      "room": "전주:공과대학 7호관 302",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000121394",
+      "id": "000012139402",
+      "schedules": {
+          "3": {
+              "start": 6,
+              "end": 7
+          },
+          "5": {
+              "start": 4,
+              "end": 7
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "논리설계",
+      "division": "3",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "윤수경",
+      "method": "일반",
+      "schedulesString": "화 5-A,화 5-B,화 6-A,목 5-A,목 5-B,목 6-A",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "75분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "75",
+      "currentPersonnel": "0",
+      "limitPersonnel": "75",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000121394",
+      "id": "000012139403",
+      "schedules": {
+          "2": {
+              "start": 8,
+              "end": 10
+          },
+          "4": {
+              "start": 8,
+              "end": 10
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "데이터베이스",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "양재동",
+      "method": "일반",
+      "schedulesString": "화 6-A,화 6-B,화 7-A,화 7-B,목 8-A,목 8-B",
+      "room": "전주:공과대학 7호관 330",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "39",
+      "currentPersonnel": "0",
+      "limitPersonnel": "39",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000115488",
+      "id": "000011548801",
+      "schedules": {
+          "2": {
+              "start": 10,
+              "end": 13
+          },
+          "4": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "데이터베이스",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "장재우",
+      "method": "일반",
+      "schedulesString": "화 6-A,화 6-B,화 7-A,화 7-B,목 8-A,목 8-B",
+      "room": "전주:공과대학 6호관 B15",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000115488",
+      "id": "000011548802",
+      "schedules": {
+          "2": {
+              "start": 10,
+              "end": 13
+          },
+          "4": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "데이터베이스",
+      "division": "3",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "류금한",
+      "method": "일반",
+      "schedulesString": "화 3-A,화 3-B,목 1-A,목 1-B,목 2-A,목 2-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000115488",
+      "id": "000011548803",
+      "schedules": {
+          "2": {
+              "start": 4,
+              "end": 5
+          },
+          "4": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "리눅스프로그래밍",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "이세호",
+      "method": "일반",
+      "schedulesString": "월 1-A,월 1-B,월 2-A,월 2-B,수 1-A,수 1-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000123102",
+      "id": "000012310201",
+      "schedules": {
+          "1": {
+              "start": 0,
+              "end": 3
+          },
+          "3": {
+              "start": 0,
+              "end": 1
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "리눅스프로그래밍",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "이세호",
+      "method": "일반",
+      "schedulesString": "월 6-A,월 6-B,월 7-A,월 7-B,수 6-A,수 6-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000123102",
+      "id": "000012310202",
+      "schedules": {
+          "1": {
+              "start": 10,
+              "end": 13
+          },
+          "3": {
+              "start": 10,
+              "end": 11
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "리눅스프로그래밍",
+      "division": "3",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "정종욱",
+      "method": "일반",
+      "schedulesString": "월 8-A,월 8-B,월 9-A,월 9-B,수 8-A,수 8-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000123102",
+      "id": "000012310203",
+      "schedules": {
+          "1": {
+              "start": 14,
+              "end": 17
+          },
+          "3": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "리눅스프로그래밍",
+      "division": "4",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김아미",
+      "method": "일반",
+      "schedulesString": "수 2-A,수 2-B,금 1-A,금 1-B,금 2-A,금 2-B",
+      "room": "전주:공과대학 7호관 204",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000123102",
+      "id": "000012310204",
+      "schedules": {
+          "3": {
+              "start": 2,
+              "end": 3
+          },
+          "5": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "산학실전캡스톤 2",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김윤경",
+      "method": "일반",
+      "schedulesString": "화 9-A,화 9-B,화 10-A,화 10-B,화 11-A,화 11-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "30",
+      "currentPersonnel": "0",
+      "limitPersonnel": "30",
+      "evaluation": "절대평가",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128200",
+      "id": "000012820001",
+      "schedules": {
+          "2": {
+              "start": 16,
+              "end": 21
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "산학실전캡스톤 2",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김진수",
+      "method": "일반",
+      "schedulesString": "월 11-A,월 11-B,월 12-A,월 12-B,월 13-A,월 13-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "30",
+      "currentPersonnel": "0",
+      "limitPersonnel": "30",
+      "evaluation": "절대평가",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128200",
+      "id": "000012820002",
+      "schedules": {
+          "1": {
+              "start": 20,
+              "end": 25
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "선형대수학",
+      "division": "8",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "곽영태",
+      "method": "일반",
+      "schedulesString": "월 6-A,월 6-B,월 7-A,월 7-B,수 6-A,수 6-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000102877",
+      "id": "000010287708",
+      "schedules": {
+          "1": {
+              "start": 10,
+              "end": 13
+          },
+          "3": {
+              "start": 10,
+              "end": 11
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "선형대수학",
+      "division": "9",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김지승",
+      "method": "일반",
+      "schedulesString": "월 3-A,월 3-B,월 4-A,월 4-B,수 3-A,수 3-B",
+      "room": "전주:공과대학 6호관 B15",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000102877",
+      "id": "000010287709",
+      "schedules": {
+          "1": {
+              "start": 4,
+              "end": 7
+          },
+          "3": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "수치해석및최적화",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "곽영태",
+      "method": "일반",
+      "schedulesString": "월 3-A,월 3-B,월 4-A,월 4-B,수 3-A,수 3-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "49",
+      "currentPersonnel": "0",
+      "limitPersonnel": "49",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128046",
+      "id": "000012804601",
+      "schedules": {
+          "1": {
+              "start": 4,
+              "end": 7
+          },
+          "3": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "수치해석및최적화",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "이준환",
+      "method": "일반",
+      "schedulesString": "월 6-A,월 6-B,월 7-A,월 7-B,수 6-A,수 6-B",
+      "room": "전주:공과대학 3호관 311",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128046",
+      "id": "000012804602",
+      "schedules": {
+          "1": {
+              "start": 10,
+              "end": 13
+          },
+          "3": {
+              "start": 10,
+              "end": 11
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "암호론",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김지승",
+      "method": "일반",
+      "schedulesString": "월 1-A,월 1-B,월 2-A,월 2-B,수 1-A,수 1-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128048",
+      "id": "000012804801",
+      "schedules": {
+          "1": {
+              "start": 0,
+              "end": 3
+          },
+          "3": {
+              "start": 0,
+              "end": 1
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "오픈소스소프트웨어개발",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "",
+      "method": "일반",
+      "schedulesString": "월 1-A,월 1-B,월 2-A,월 2-B,수 1-A,수 1-B",
+      "room": "전주:공과대학 7호관 330",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "39",
+      "currentPersonnel": "0",
+      "limitPersonnel": "39",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000125865",
+      "id": "000012586501",
+      "schedules": {
+          "1": {
+              "start": 0,
+              "end": 3
+          },
+          "3": {
+              "start": 0,
+              "end": 1
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "운영체제",
+      "division": "4",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "박현찬",
+      "method": "일반",
+      "schedulesString": "월 3-A,월 3-B,월 4-A,월 4-B,수 3-A,수 3-B",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000103861",
+      "id": "000010386104",
+      "schedules": {
+          "1": {
+              "start": 4,
+              "end": 7
+          },
+          "3": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "운영체제",
+      "division": "5",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "박현찬",
+      "method": "일반",
+      "schedulesString": "월 8-A,월 8-B,월 9-A,월 9-B,수 8-A,수 8-B",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000103861",
+      "id": "000010386105",
+      "schedules": {
+          "1": {
+              "start": 14,
+              "end": 17
+          },
+          "3": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "운영체제",
+      "division": "6",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "박현찬",
+      "method": "일반",
+      "schedulesString": "월 1-A,월 1-B,월 2-A,월 2-B,수 1-A,수 1-B",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000103861",
+      "id": "000010386106",
+      "schedules": {
+          "1": {
+              "start": 0,
+              "end": 3
+          },
+          "3": {
+              "start": 0,
+              "end": 1
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "운영체제",
+      "division": "7",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "황지원",
+      "method": "일반",
+      "schedulesString": "화 3-A,화 3-B,목 1-A,목 1-B,목 2-A,목 2-B",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000103861",
+      "id": "000010386107",
+      "schedules": {
+          "2": {
+              "start": 4,
+              "end": 5
+          },
+          "4": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "인간-컴퓨터상호작용",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "정종욱",
+      "method": "일반",
+      "schedulesString": "월 3-A,월 3-B,월 4-A,월 4-B,수 3-A,수 3-B",
+      "room": "전주:공과대학 3호관 311",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128042",
+      "id": "000012804201",
+      "schedules": {
+          "1": {
+              "start": 4,
+              "end": 7
+          },
+          "3": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "인공지능",
+      "division": "7",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김성찬",
+      "method": "일반",
+      "schedulesString": "화 1-B,화 2-A,화 2-B,목 3-A,목 3-B,목 4-A",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "75분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104177",
+      "id": "000010417707",
+      "schedules": {
+          "2": {
+              "start": 1,
+              "end": 3
+          },
+          "4": {
+              "start": 4,
+              "end": 6
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "인공지능",
+      "division": "8",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "나승훈",
+      "method": "일반",
+      "schedulesString": "화 8-A,화 8-B,목 6-A,목 6-B,목 7-A,목 7-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104177",
+      "id": "000010417708",
+      "schedules": {
+          "2": {
+              "start": 14,
+              "end": 15
+          },
+          "4": {
+              "start": 10,
+              "end": 13
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "임베디드시스템",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "이문근",
+      "method": "일반",
+      "schedulesString": "수 2-A,수 2-B,금 1-A,금 1-B,금 2-A,금 2-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "39",
+      "currentPersonnel": "0",
+      "limitPersonnel": "39",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000117107",
+      "id": "000011710701",
+      "schedules": {
+          "3": {
+              "start": 2,
+              "end": 3
+          },
+          "5": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "자료구조",
+      "division": "3",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "이경순",
+      "method": "일반",
+      "schedulesString": "화 6-B,화 7-A,화 7-B,목 8-A,목 8-B,목 9-A",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104479",
+      "id": "000010447903",
+      "schedules": {
+          "2": {
+              "start": 11,
+              "end": 13
+          },
+          "4": {
+              "start": 14,
+              "end": 16
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "자료구조",
+      "division": "4",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "이경순",
+      "method": "일반",
+      "schedulesString": "화 8-A,화 8-B,화 9-A,목 6-B,목 7-A,목 7-B",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104479",
+      "id": "000010447904",
+      "schedules": {
+          "2": {
+              "start": 14,
+              "end": 16
+          },
+          "4": {
+              "start": 11,
+              "end": 13
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "자료구조",
+      "division": "5",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "",
+      "method": "일반",
+      "schedulesString": "월 3-A,월 3-B,월 4-A,월 4-B,수 3-A,수 3-B",
+      "room": "전주:공과대학 2호관 116",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "55",
+      "currentPersonnel": "0",
+      "limitPersonnel": "55",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104479",
+      "id": "000010447905",
+      "schedules": {
+          "1": {
+              "start": 4,
+              "end": 7
+          },
+          "3": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공필수",
+      "title": "자료구조",
+      "division": "6",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "류금한",
+      "method": "일반",
+      "schedulesString": "화 1-A,화 1-B,화 2-A,화 2-B,목 3-A,목 3-B",
+      "room": "전주:공과대학 3호관 311",
+      "verification": "일반",
+      "department": "컴퓨터공학부 2,IT정보공학과 2,IT지능정보공학과 2,컴퓨터인공지능학부 2,컴퓨터공학부(컴퓨터) 2",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "60",
+      "currentPersonnel": "0",
+      "limitPersonnel": "60",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104479",
+      "id": "000010447906",
+      "schedules": {
+          "2": {
+              "start": 0,
+              "end": 3
+          },
+          "4": {
+              "start": 4,
+              "end": 5
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "자연어처리",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "나승훈",
+      "method": "일반",
+      "schedulesString": "화 6-A,화 6-B,화 7-A,화 7-B,목 8-A,목 8-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000104496",
+      "id": "000010449601",
+      "schedules": {
+          "2": {
+              "start": 10,
+              "end": 13
+          },
+          "4": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "컴파일러",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "송현제",
+      "method": "일반",
+      "schedulesString": "화 3-A,화 3-B,목 1-A,목 1-B,목 2-A,목 2-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000105717",
+      "id": "000010571701",
+      "schedules": {
+          "2": {
+              "start": 4,
+              "end": 5
+          },
+          "4": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "컴퓨터네트워크",
+      "division": "6",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김민철",
+      "method": "일반",
+      "schedulesString": "월 6-A,월 6-B,월 7-A,월 7-B,수 6-A,수 6-B",
+      "room": "전주:공과대학 2호관 116",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000105748",
+      "id": "000010574806",
+      "schedules": {
+          "1": {
+              "start": 10,
+              "end": 13
+          },
+          "3": {
+              "start": 10,
+              "end": 11
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "컴퓨터네트워크",
+      "division": "7",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "김찬기",
+      "method": "일반",
+      "schedulesString": "화 8-A,화 8-B,목 6-A,목 6-B,목 7-A,목 7-B",
+      "room": "전주:공과대학 7호관 302",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000105748",
+      "id": "000010574807",
+      "schedules": {
+          "2": {
+              "start": 14,
+              "end": 15
+          },
+          "4": {
+              "start": 10,
+              "end": 13
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "컴퓨터네트워크",
+      "division": "8",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "편기현",
+      "method": "일반",
+      "schedulesString": "월 6-A,월 6-B,월 7-A,월 7-B,수 6-A,수 6-B",
+      "room": "전주:공과대학 7호관 302",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000105748",
+      "id": "000010574808",
+      "schedules": {
+          "1": {
+              "start": 10,
+              "end": 13
+          },
+          "3": {
+              "start": 10,
+              "end": 11
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "컴퓨터논리및논술론",
+      "division": "1",
+      "credit": "2",
+      "timePerWeek": "2",
+      "professor": "김아미",
+      "method": "일반",
+      "schedulesString": "금 3-A,금 3-B,금 4-A,금 4-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅰ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000121119",
+      "id": "000012111901",
+      "schedules": {
+          "5": {
+              "start": 4,
+              "end": 7
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "컴퓨터비전",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "오일석",
+      "method": "일반",
+      "schedulesString": "월 6-A,월 6-B,월 7-A,월 7-B,수 6-A,수 6-B",
+      "room": "전주:공과대학 7호관 534",
+      "verification": "일반",
+      "department": "컴퓨터공학부 4,IT정보공학과 4,IT지능정보공학과 4,컴퓨터인공지능학부 4,컴퓨터공학부(컴퓨터) 4",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000128201",
+      "id": "000012820101",
+      "schedules": {
+          "1": {
+              "start": 10,
+              "end": 13
+          },
+          "3": {
+              "start": 10,
+              "end": 11
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "프로그래밍언어론",
+      "division": "1",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "송현제",
+      "method": "일반",
+      "schedulesString": "월 8-A,월 8-B,월 9-A,월 9-B,수 8-A,수 8-B",
+      "room": "전주:공과대학 7호관 301",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000106011",
+      "id": "000010601101",
+      "schedules": {
+          "1": {
+              "start": 14,
+              "end": 17
+          },
+          "3": {
+              "start": 14,
+              "end": 15
+          }
+      }
+  },
+  {
+      "completion": "전공선택",
+      "title": "프로그래밍언어론",
+      "division": "2",
+      "credit": "3",
+      "timePerWeek": "3",
+      "professor": "권오봉",
+      "method": "일반",
+      "schedulesString": "수 2-A,수 2-B,금 1-A,금 1-B,금 2-A,금 2-B",
+      "room": "전주:공과대학 7호관 302",
+      "verification": "일반",
+      "department": "컴퓨터공학부 3,IT정보공학과 3,IT지능정보공학과 3,컴퓨터인공지능학부 3,컴퓨터공학부(컴퓨터) 3",
+      "public": "공개",
+      "noPublic": "",
+      "runningTime": "50분",
+      "target": "전체(학부)",
+      "language": "한국어",
+      "allPersonnel": "50",
+      "currentPersonnel": "0",
+      "limitPersonnel": "50",
+      "evaluation": "상대평가Ⅱ",
+      "liberal": "",
+      "detailLibaral": "",
+      "code": "0000106011",
+      "id": "000010601102",
+      "schedules": {
+          "3": {
+              "start": 2,
+              "end": 3
+          },
+          "5": {
+              "start": 0,
+              "end": 3
+          }
+      }
+  }
+]

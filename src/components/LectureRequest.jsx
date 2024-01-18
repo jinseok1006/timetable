@@ -71,6 +71,13 @@ export default React.memo(function LectureRequest() {
       >
         request elem.liberal.json
       </Button>
+      <Button
+        fullWidth
+        variant="contained"
+        onClick={() => handleSearch('2024.json')}
+      >
+        request 2024.json
+      </Button>
     </Grid>
   );
 });

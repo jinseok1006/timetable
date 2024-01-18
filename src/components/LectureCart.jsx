@@ -46,6 +46,13 @@ function CartItem({ lecture, id, onDelete }) {
                 sx={{ color: 'gray' }}
               >
                 {lecture.division}분반
+              </Typography>{' '}
+              <Typography
+                component="span"
+                variant="body2"
+                sx={{ color: 'gray' }}
+              >
+                {lecture.professor}교수님
               </Typography>
             </>
           }
