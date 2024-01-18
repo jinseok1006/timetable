@@ -1,3 +1,3 @@
 # DEMO
 
-https://spontaneous-tulumba-92bc57.netlify.app
+https://timetable.jinseok.store
