@@ -5,10 +5,8 @@ import { Button, MenuItem, Grid, TextField } from '@mui/material';
 
 import { useLectureActionHandler } from '@/components/LectureContext';
 
-async function fetchLectures(params) {
-  const response = await axios.get(
-    `${import.meta.env.VITE_FETCH_URL}/${params}`
-  );
+async function fetchLectures(url) {
+  const response = await axios.get(url);
   return response.data;
 }
 
