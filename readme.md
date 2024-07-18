@@ -1,3 +1,3 @@
 # DEMO
 
-https://timetable.jinseok.store
+https://timetable.jins.page
